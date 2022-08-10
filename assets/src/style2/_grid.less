@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 0.5em;
+  width: 768px;
+  margin: 40px auto;
+  position: relative;
+  background-color: @paperColor;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'job job job'
+    'address address contact'
+    'photo photo education'
+    'photo photo work'
+    'languages aboutme aboutme'
+    'skills skills hobbies'
+  ;
+}
+
+h1 {
+  grid-area: photo;
+}
+
+h2 {
+  grid-area: job;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#address {
+  grid-area: address;
+}
+
+#languages {
+  grid-area: languages;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#hobbies {
+  grid-area: hobbies;
+}
+
+#about-me {
+  grid-area: aboutme;
+}
+
+#education {
+  grid-area: education;
+}
+
+#work {
+  grid-area: work;
+}
+
+#photo {
+  grid-area: photo;
+  img {
+    width: 100%;
+  }
+}
+
+section, h2 {
+  padding: 1rem;
+  border: 1px solid @baseFontColor;
+}
