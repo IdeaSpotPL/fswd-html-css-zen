@@ -1,0 +1,31 @@
+#education {
+  ul {
+    li {
+      display: grid;
+      grid-template-areas: 'years name' 'years text';
+      grid-column-gap: 1em;
+      grid-template-columns: 100px auto;
+      margin-bottom: 1em;
+      background-color: rgba(255, 255, 255, 0);
+      transition: background-color 0.25s;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 1);
+      }
+
+      .uni-name {
+        grid-area: name;
+        font-weight: bold;
+      }
+      .uni-years {
+        grid-area: years;
+        font-size: 30px;
+        line-height: 32px;
+      }
+      .uni-text {
+        grid-area: text;
+        font-size: @baseFontSize * 0.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+#skills {
+  ul {
+    position: relative;
+
+    li {
+      border-bottom: 4px solid @chartBaseColor;
+      padding-bottom: 3px;
+      margin-bottom: 1em;
+
+      &::after {
+        display: block;
+        height: 8px;
+        top: 9px;
+        left: 0;
+        background-color: @chartBarColor;
+        content: " ";
+        position: relative;
+        border-bottom-left-radius: 4px;
+        border-top-left-radius: 4px;
+
+        transition: transform 0.5s;
+        transform: translateX(0) scaleX(1);
+      }
+
+      &:hover::after {
+        transform: translateX(5%) scaleX(1.1);
+      }
+
+      &:nth-child(1)::after {
+        width: 80%;
+      }
+
+      &:nth-child(2)::after {
+        width: 30%;
+      }
+
+      &:nth-child(3)::after {
+        width: 50%;
+      }
+    }
+  }
+}

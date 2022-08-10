@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @backgroundBodyColor;
+}
+
+main {
+  padding: 0 40px 40px 40px;
+  width: 768px;
+  margin: 40px auto;
+  position: relative;
+  box-shadow: 5px 5px 20px;
+  background-color: white;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 260px auto;
+  grid-template-areas:
+    'header header'
+    'contact aboutme'
+    'address aboutme'
+    'languages aboutme'
+    'skills education'
+    'hobbies work'
+  ;
+}
+
+h1 {
+  grid-area: header;
+}
+
+h2 {
+  grid-area: header;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#address {
+  grid-area: address;
+}
+
+#languages {
+  grid-area: languages;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#hobbies {
+  grid-area: hobbies;
+}
+
+#about-me {
+  grid-area: aboutme;
+}
+
+#education {
+  grid-area: education;
+}
+
+#work {
+  grid-area: work;
+}
+
+section {
+  padding: 1em;
+}
