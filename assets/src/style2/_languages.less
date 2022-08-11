@@ -1,0 +1,41 @@
+#languages {
+  h3 {
+    background: none;
+    color: @exclamationColor;
+  }
+
+  ul {
+    position: relative;
+
+    list-style-type: square;
+    margin-left: 1em;
+
+    li {
+      display: list-item;
+    }
+
+    li:nth-child(1)::after {
+      content: '\2022 \2022 \2022 \2022 \2022';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      font-size: @baseFontSize * 2;
+    }
+
+    li:nth-child(2)::after {
+      content: '\2022 \2022';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      font-size: @baseFontSize * 2;
+    }
+
+    li:nth-child(3)::after {
+      content: '\2022';
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      font-size: @baseFontSize * 2;
+    }
+  }
+}

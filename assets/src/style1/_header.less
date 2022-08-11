@@ -8,6 +8,10 @@ main::before {
   z-index: 0;
   top: 0;
   left: 0;
+
+  @media (max-width: @breakpointMobile) {
+    width: 100%;
+  }
 }
 
 h1 {
@@ -23,16 +27,33 @@ h1 {
   padding-left: 20px;
   padding-top: 40px;
   box-shadow: 5px 5px 20px;
+
+  @media (max-width: @breakpointMobile) {
+    top: 210px;
+    left: 5px;
+    right: 5px;
+    padding: 40px 0;
+    width: auto;
+    box-shadow: none;
+  }
 }
 
 h2 {
-  position: relative;
+  position: absolute;
   top: 155px;
   left: 180px;
   width: 440px;
   height: 100px;
   text-align: center;
   padding-left: 20px;
+
+  @media (max-width: @breakpointMobile) {
+    top: 285px;
+    left: 5px;
+    right: 5px;
+    padding: 0;
+    width: auto;
+  }
 }
 
 #photo {
@@ -51,5 +72,9 @@ h2 {
 
   img {
     display: none;
+  }
+
+  @media (max-width: @breakpointMobile) {
+    left: calc(50% - 90px);
   }
 }

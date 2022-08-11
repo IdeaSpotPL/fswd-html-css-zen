@@ -1,3 +1,5 @@
+@breakpointMobile: 768px;
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +27,15 @@ main {
     'skills education'
     'hobbies work'
   ;
+
+  @media (max-width: @breakpointMobile) {
+    margin: 0;
+    grid-template-columns: auto;
+    grid-template-rows: 320px auto;
+    grid-template-areas: 'header' 'contact' 'address' 'aboutme' 'languages' 'skills' 'education' 'work' 'hobbies';
+    width: 100%;
+    padding: 0;
+  }
 }
 
 h1 {

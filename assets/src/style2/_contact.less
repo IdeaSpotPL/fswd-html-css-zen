@@ -9,11 +9,21 @@
 
 #address {
   margin-right: -10px;
+
+  @media (max-width: @breakpointMobile) {
+    margin-right: 0;
+    margin-top: -20px;
+    text-align: center;
+  }
 }
 
 #contact {
   text-align: right;
   a {
     color: @baseFontContrastColor;
+  }
+
+  @media (max-width: @breakpointMobile) {
+    text-align: center;
   }
 }

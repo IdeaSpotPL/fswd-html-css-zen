@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>CV Zen Garden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="assets/dist/style2.min.css">
 </head>
 <body>
@@ -95,6 +96,24 @@
         </ul>
     </section>
 </main>
+
+<script>
+    var styles = ['assets/dist/style1.min.css', 'assets/dist/style2.min.css'];
+</script>
+
+<script>
+    let link = document.getElementsByTagName('link')[0];
+    document.addEventListener('keyup', function(event) {
+        if (! event.altKey) {
+            return;
+        }
+        let parsedKey = parseInt(event.key);
+        if (parsedKey < 1 || parsedKey > 9 || styles[parsedKey - 1] === undefined) {
+            return;
+        }
+        link.href = styles[parsedKey - 1];
+    })
+</script>
 
 </body>
 </html>

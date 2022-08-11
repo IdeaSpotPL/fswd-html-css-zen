@@ -1,0 +1,24 @@
+#education {
+  ul {
+    li {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1em;
+
+      .uni-name {
+        order: 1;
+        font-weight: bold;
+      }
+
+      .uni-years {
+        order: 2;
+        font-style: italic;
+      }
+
+      .uni-text {
+        order: 3;
+        font-size: @baseFontSize * 0.8;
+      }
+    }
+  }
+}

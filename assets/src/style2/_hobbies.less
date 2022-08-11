@@ -1,0 +1,29 @@
+#hobbies {
+  h3 {
+    background: none;
+    color: @baseFontColor;
+    text-shadow: 2px 2px 2px @exclamationColor;
+  }
+
+  ul {
+    text-align: center;
+    li {
+      display: inline;
+      text-transform: lowercase;
+      padding: 0.5rem;
+
+
+      .tag-cloud-item(@strength) {
+        font-size: @baseFontSize * (0.8 + 0.1 * @strength);
+        color: mix(@baseFontColor, @paperColor, @strength * 10%);
+      }
+
+      &:nth-child(1) { .tag-cloud-item(2); }
+      &:nth-child(2) { .tag-cloud-item(5); }
+      &:nth-child(3) { .tag-cloud-item(7); }
+      &:nth-child(4) { .tag-cloud-item(2); }
+      &:nth-child(5) { .tag-cloud-item(4); }
+      &:nth-child(6) { .tag-cloud-item(3); }
+    }
+  }
+}

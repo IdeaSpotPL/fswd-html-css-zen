@@ -1,3 +1,5 @@
+@breakpointMobile: 768px;
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +23,24 @@ main {
     'languages aboutme aboutme'
     'skills skills hobbies'
   ;
+
+  @media (max-width: @breakpointMobile) {
+    margin: 0;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-areas:
+    'job'
+    'photo'
+    'aboutme'
+    'education'
+    'work'
+    'languages'
+    'skills'
+    'hobbies'
+    'contact'
+    'address'
+  ;
+  }
 }
 
 h1 {
