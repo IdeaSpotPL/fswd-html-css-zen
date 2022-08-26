@@ -2,72 +2,71 @@
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     background-color: @backgroundBodyColor;
-  }
-  
-  main {
-    padding: 0 40px 40px 40px;
-    width: 768px;
+}
+
+main {
+    width: 786px;
     margin: 40px auto;
-    position: relative;
-    box-shadow: 5px 5px 20px;
     background-color: @paperColor;
-  
+    box-shadow: 5px 5px 20px;
+    padding: 40px;
+
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      'header header'
-      'contact aboutme'
-      'address aboutme'
-      'languages aboutme'
-      'skills education'
-      'hobbies work'
+    grid-template-areas: 
+        'header header'
+        'contact aboutme'
+        'address aboutme'
+        'languages aboutme'
+        'skills education'
+        'hobbies work'
     ;
-  }
-  
-  h1 {
-    grid-area: header;
-  }
-  
-  h2 {
-    grid-area: header;
-  }
+}
 
-  #photo {
+h1 {
+    grid-area: header;
+}
+
+h2 {
+    grid-area: header;
+}
+
+#photo {
     display: none;
-  }
-  
-  #contact {
+}
+
+#contact {
     grid-area: contact;
-  }
-  
-  #address {
+}
+
+#address {
     grid-area: address;
-  }
-  
-  #about-me {
+}
+
+#about-me {
     grid-area: aboutme;
-  }
-  
-  #education {
+}
+
+#education {
     grid-area: education;
-  }
-  
-  #work {
+}
+
+#work {
     grid-area: work;
-  }
-  
-  #skills {
+}
+
+#skills {
     grid-area: skills;
-  }
-  
-  #languages {
+}
+
+#languages {
     grid-area: languages;
-  }
-  
-  #hobbies {
+}
+
+#hobbies {
     grid-area: hobbies;
-  }
+}
