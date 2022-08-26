@@ -7,52 +7,52 @@ main::before {
     width: 768px;
     height: 170px;
     background-color: @paperTopColor;
-    z-index: 0;
     top: 0;
     left: 0;
-  }
-  
-  h1 {
+}
+
+h1 {
     display: block;
     width: 440px;
     height: 150px;
-    margin: 0 auto;
-    text-align: center;
     background-color: @paperColor;
+    position: absolute;
+    box-shadow: 5px 5px 20px;
+    top: 66px;
+    left: 180px;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+h2 {
+    display: block;
+    width: 440px;
+    height: 150px;
     position: absolute;
     top: 66px;
     left: 180px;
-    padding-left: 20px;
-    padding-top: 40px;
-    box-shadow: 5px 5px 20px;
-  }
-  
-  h2 {
-    position: absolute;
-    top: 155px;
-    left: 180px;
-    width: 440px;
-    height: 100px;
     text-align: center;
+    padding-top: 90px;
     padding-left: 20px;
-  }
-  
-  #photo {
+}
+
+#photo {
     display: block;
     position: absolute;
     width: 180px;
     height: 180px;
     background-image: url("../img/pexels-jeffrey-reed-769772.jpg");
     background-size: cover;
-    background-position-y: -40px;
-    border: 10px solid white;
-    border-radius: 50%;
+    background-position-y: -20px;
     left: 90px;
-    top: 50px;
+    top: 90px;
     box-shadow: 5px 5px 20px;
-  
+
+    border-radius: 50%;
+    border: 10px solid @paperColor;
+
     img {
-      display: none;
+        display: none;
     }
-  }
-  
+}
