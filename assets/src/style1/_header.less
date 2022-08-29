@@ -9,6 +9,10 @@ main::before {
     background-color: @paperTopColor;
     top: 0;
     left: 0;
+
+    @media (max-width: @breakpointMobile) {
+        width: 100%;
+    }
 }
 
 h1 {
@@ -23,6 +27,15 @@ h1 {
     text-align: center;
     padding-top: 40px;
     padding-left: 20px;
+
+    @media (max-width: @breakpointMobile) {
+        left: 5px;
+        right: 5px;
+        width: auto;
+        box-shadow: none;
+        top: 240px;
+        padding-left: 0;
+    }
 }
 
 h2 {
@@ -35,6 +48,15 @@ h2 {
     text-align: center;
     padding-top: 90px;
     padding-left: 20px;
+
+    @media (max-width: @breakpointMobile) {
+        left: 5px;
+        right: 5px;
+        width: auto;
+        box-shadow: none;
+        top: 240px;
+        padding-left: 0;
+    }
 }
 
 #photo {
@@ -54,5 +76,10 @@ h2 {
 
     img {
         display: none;
+    }
+
+    @media (max-width:@breakpointMobile) {
+        left: calc(50% - 90px);
+        top: 70px;
     }
 }
