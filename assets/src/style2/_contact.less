@@ -11,6 +11,12 @@
 
 #address {
     margin-right: -10px;
+
+    @media (max-width: @breakpointMobile) {
+        margin-right: 0;
+        margin-bottom: -20px;
+        text-align: center;
+    }
 }
 
 #contact {
@@ -22,5 +28,9 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    @media (max-width: @breakpointMobile) {
+        text-align: center;
     }
 }
